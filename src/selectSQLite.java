@@ -12,13 +12,14 @@ public class selectSQLite {
             Statement stmt = null;
             try {
                 Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:test.db");
+                c = DriverManager.getConnection("jdbc:sqlite:movies1.db");
                 c.setAutoCommit(false);
                 System.out.println("Opened database successfully");
 
                 stmt = c.createStatement();
-                ResultSet rs = stmt.executeQuery( "SELECT * FROM COMPANY;" );
+                ResultSet rs = stmt.executeQuery( "SELECT id, name, age FROM COMPANY;" );
                 while ( rs.next() ) {
+
                     int id = rs.getInt("id");
                     String  name = rs.getString("name");
                     int age  = rs.getInt("age");

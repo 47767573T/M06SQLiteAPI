@@ -36,20 +36,25 @@ public class themovieDBproject {
         String s = "";
         String api_key = "e6f2c549601727fca2e90f4291bbe34d";
 
-        for (int i = 0; i < 5; i++) {
-            int peli = 2 +i;
-            String film = String.valueOf(peli);
-            String peticio = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
+        for (int i = 0; i < 1; i++) {
+            int numIndexPeli = 620+i;
+            String film = String.valueOf(numIndexPeli);
+            String peticionActores = "https://api.themoviedb.org/3/movie/"+film+"/credits?api_key="+api_key;
+            String peticionPeliculas = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
             try {
-                s = getHTML(peticio);
-                SJS(s);
+                s = getHTML(peticionActores);
+                SJC(s);
+                //s = getHTML(peticionPeliculas);
+                //SJS(s);
             } catch (Exception e) {
-                System.out.print("La peli " + film + " no existeix");
-                System.out.println(s);
+                System.out.println("La peli " + film + " no existeix" + e);
             }
+
+
+
+
+
         }
-
-
     }
 
     public static void SJS (String cadena){
@@ -70,9 +75,7 @@ public class themovieDBproject {
 
             JSONObject jb= (JSONObject)arra03.get(i);
             System.out.println(jb.get("character")+"<-->"+jb.get("name"));
-
         }
-
     }
 
 }
