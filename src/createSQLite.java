@@ -3,7 +3,8 @@ import java.sql.*;
 
 public class createSQLite {
 
-    private static String archivoDB = "jdbc:sqlite:moviesDB0.db";
+
+    static String archivoDB = themovieDBproject.ficheroDB;
 
     public static void createTabla(String nombreTablaPelis, String nombreTablaActores) {
 
@@ -18,13 +19,13 @@ public class createSQLite {
             String sqlPeli = "CREATE TABLE " + nombreTablaPelis
                     + " (ID INT PRIMARY KEY     NOT NULL,"
                     + " TITULO CHAR(100),"
-                    + " FECHA CHAR(20),"
-                    + " PERSONAJES CHAR(1000))";
+                    + " FECHA CHAR(20))";
 
             String sqlActor = "CREATE TABLE " + nombreTablaActores
                     + "(ID INT PRIMARY KEY NOT NULL,"
-                    + " NAME           CHAR(50),"
+                    + " NOMBRE         CHAR(50),"
                     + " ID_ACTOR       INT,"
+                    + " PERSONAJE      CHAR(50),"
                     + " ID_PELICULA    INT)";
 
             stmt.executeUpdate(sqlPeli);
@@ -38,7 +39,10 @@ public class createSQLite {
         }
         System.out.println("Tabla de MoviesDB creada");
     }
+
 }
+
+
 
 /*
     public static void main(String[] args) {

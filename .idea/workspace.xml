@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97540dd5-65a2-4e3f-8903-a080fa00332f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/createSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/createSQLite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/insertSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/insertSQLite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/selectSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/selectSQLite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/themovieDBproject.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/themovieDBproject.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/createSQLite.java" afterPath="$PROJECT_DIR$/src/createSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/insertSQLite.java" afterPath="$PROJECT_DIR$/src/insertSQLite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/selectSQLite.java" afterPath="$PROJECT_DIR$/src/selectSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/themovieDBproject.java" afterPath="$PROJECT_DIR$/src/themovieDBproject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -32,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="themovieDBproject.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="themovieDBproject.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state vertical-scroll-proportion="2.0503433">
+              <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,21 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createSQLite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="createSQLite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4825581">
-              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moviesDB9.db" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/moviesDB9.db">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -68,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
+              <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -78,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="64" />
+              <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -98,9 +83,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/selectSQLite.java" />
+        <option value="$PROJECT_DIR$/src/createSQLite.java" />
         <option value="$PROJECT_DIR$/src/insertSQLite.java" />
         <option value="$PROJECT_DIR$/src/themovieDBproject.java" />
-        <option value="$PROJECT_DIR$/src/createSQLite.java" />
       </list>
     </option>
   </component>
@@ -495,23 +480,38 @@
       <option name="project" value="LOCAL" />
       <updated>1448148934524</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Archivo createSQLite adaptado a las tablas requeridas&#10;&#10;- Clase main corregida para crear tablas">
+      <created>1448218314961</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1448218314961</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="5" width="1480" height="847" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.4943662" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35055867" sideWeight="0.3471831" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3519553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35055867" sideWeight="0.6528169" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.49718308" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17535211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -541,7 +541,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Parte inicial de la practica" />
     <MESSAGE value="errores corregidos. Preparado createSQLite para crear tabla de actores (aun falla)" />
-    <option name="LAST_COMMIT_MESSAGE" value="errores corregidos. Preparado createSQLite para crear tabla de actores (aun falla)" />
+    <MESSAGE value="- Archivo createSQLite adaptado a las tablas requeridas&#10;&#10;- Clase main corregida para crear tablas" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Archivo createSQLite adaptado a las tablas requeridas&#10;&#10;- Clase main corregida para crear tablas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -660,7 +661,15 @@
     <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="32" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="64" />
+          <caret line="36" column="80" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -668,34 +677,18 @@
     <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moviesDB9.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="54" column="83" selection-start-line="54" selection-start-column="83" selection-end-line="54" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state vertical-scroll-proportion="2.0503433">
+          <caret line="68" column="69" selection-start-line="68" selection-start-column="69" selection-end-line="68" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4825581">
-          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
