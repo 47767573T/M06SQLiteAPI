@@ -15,10 +15,12 @@ public class themovieDBproject {
 
     static Random rnd = new Random();
 
-    private static String nombreTablaPeliculas = "Sin nombre";
-    private static String nombreTablaActores = "Sin nombre";
     public static String ficheroDB = "jdbc:sqlite:moviesDB"+rnd.nextInt(5000)+".db";
+    public static String nombreTablaPeliculas = "Peliculas";
+    public static String nombreTablaActores = "Actores";
     public static int lastIdCast = 1;
+    public static int idIniPelicula;
+    public static int numPeliculas;
 
 
     public static void main(String[] args){
@@ -29,20 +31,10 @@ public class themovieDBproject {
         String s = "";
         String api_key = "e6f2c549601727fca2e90f4291bbe34d";
 
-        //System.out.println("¿Nombre de la tabla de peliculas?");
-        //nombreTablaPeliculas = scn.next();
-        nombreTablaPeliculas = "pelis";
-
-        //System.out.println("Nombre de la tabla de actores?");
-        //nombreTablaActores = scn.next();
-        nombreTablaActores = "actores";
-
-        createSQLite.createTabla(nombreTablaPeliculas, nombreTablaActores);
-
 
         //:::::::::::::::::::::::::::::::::::::::INTRODUCIMOS LOS REGISTROS
-        for (int i = 0; i < 2; i++) {
-            int peliculaIndex = 851+i;
+        for (int i = 0; i < numPeliculas; i++) {
+            int peliculaIndex = idIniPelicula+i;
             String peliculaID = String.valueOf(peliculaIndex);
             String actoresURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"/credits?api_key="+api_key;
             String peliculasURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"?api_key="+api_key;
@@ -57,6 +49,16 @@ public class themovieDBproject {
                 System.out.println("La peli " + peliculaID + " no existeix " + e);
             }
         }
+
+        //::::::::::::::::::::::::::::::::::::::::GENERAMOS LOS 2 MODOS DE CONSULTA
+        //MODO 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+        System.out.println("\n\n\tQUERY MODO 1:\n");
+
+        System.out.println("Listado de peliculas:");
+        selectSQLite.movieList();
+
+
+
     }
 
     public static void jsonToTablaPelis (String cadena, int id){
@@ -66,7 +68,7 @@ public class themovieDBproject {
         String titulo = (String) jsonItem.get("original_title");
         String fecha = (String) jsonItem.get("release_date");
 
-        insertSQLite.insertTablaPelis(nombreTablaPeliculas, id, titulo, fecha);
+        insertSQLite.insertTablaPelis(id, titulo, fecha);
     }
 
     public static void jsonToTablaActores (String cadena, int idPeli){
@@ -80,7 +82,7 @@ public class themovieDBproject {
             String nombre = (String) jo.get("name");
             long actor = (long) jo.get("id");
             String personaje = (String) jo.get("character");
-            insertSQLite.insertTablaActores(nombreTablaActores, lastIdCast, nombre, actor, personaje, idPeli);
+            insertSQLite.insertTablaActores(lastIdCast, nombre, actor, personaje, idPeli);
             lastIdCast++;
         }
     }

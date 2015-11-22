@@ -6,7 +6,7 @@ public class insertSQLite {
 
     static String archivoDB = themovieDBproject.ficheroDB;
 
-    public static void insertTablaPelis(String nombreTabla, int id, String titulo, String fecha) {
+    public static void insertTablaPelis(int id, String titulo, String fecha) {
         {
             Connection c = null;
             Statement stmt = null;
@@ -16,7 +16,7 @@ public class insertSQLite {
                 c.setAutoCommit(false);
 
                 stmt = c.createStatement();
-                String sql = "INSERT INTO "+nombreTabla+" (ID,TITULO,FECHA) "
+                String sql = "INSERT INTO "+themovieDBproject.nombreTablaPeliculas+" (ID,TITULO,FECHA) "
                             +"VALUES ("+id+",'"+titulo+"','"+fecha+"');";
                 stmt.executeUpdate(sql);
 
@@ -24,17 +24,13 @@ public class insertSQLite {
                 c.commit();
                 c.close();
             } catch (Exception e) {
-
-
                 System.err.println(e.getClass().getName() + ": " + e.getMessage());
-                System.out.println("trasinsertablapelis");
                 System.exit(0);
             }
-            System.out.println("Guardada ("+titulo+") en ("+nombreTabla+")");
         }
     }
 
-    public static void insertTablaActores(String nombreTabla, int id, String nombre, long actor, String personaje, int idPeli) {
+    public static void insertTablaActores(int id, String nombre, long actor, String personaje, int idPeli) {
         {
             Connection c = null;
             Statement stmt = null;
@@ -44,7 +40,7 @@ public class insertSQLite {
                 c.setAutoCommit(false);
 
                 stmt = c.createStatement();
-                String sql = "INSERT INTO "+nombreTabla+" (ID,NOMBRE,ID_ACTOR,PERSONAJE,ID_PELICULA) "
+                String sql = "INSERT INTO "+themovieDBproject.nombreTablaActores+" (ID,NOMBRE,ID_ACTOR,PERSONAJE,ID_PELICULA) "
                         +"VALUES ("+id+",'"+nombre+"',"+actor+",'"+personaje+"',"+idPeli+");";
                 stmt.executeUpdate(sql);
 
@@ -55,10 +51,9 @@ public class insertSQLite {
                 System.err.println(e.getClass().getName()+e.getClass().getMethods() + ": " + e.getMessage()+"prueba");
                 System.exit(0);
             }
-            System.out.println("Guardado ("+nombre+") en ("+nombreTabla+")");
+            System.out.println("Guardado ("+nombre+") en ("+themovieDBproject.nombreTablaActores+")");
         }
     }
-
 }
 /*
     public static void main(String[] args) {
@@ -67,7 +62,7 @@ public class insertSQLite {
             Statement stmt = null;
             try {
                 Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:movies1.db");
+                c = DriverManager.getConnection("jdbc:sqlite:moviesXX.db");
                 c.setAutoCommit(false);
                 System.out.println("acceso correcto a Base de datos");
 

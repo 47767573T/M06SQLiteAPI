@@ -6,7 +6,7 @@ public class createSQLite {
 
     static String archivoDB = themovieDBproject.ficheroDB;
 
-    public static void createTabla(String nombreTablaPelis, String nombreTablaActores) {
+    public static void createTabla() {
 
         Connection c = null;
         Statement stmt = null;
@@ -16,12 +16,12 @@ public class createSQLite {
             System.out.println("acceso correcto a Base de datos");
 
             stmt = c.createStatement();
-            String sqlPeli = "CREATE TABLE " + nombreTablaPelis
+            String sqlPeli = "CREATE TABLE " + themovieDBproject.nombreTablaPeliculas
                     + " (ID INT PRIMARY KEY     NOT NULL,"
                     + " TITULO CHAR(100),"
                     + " FECHA CHAR(20))";
 
-            String sqlActor = "CREATE TABLE " + nombreTablaActores
+            String sqlActor = "CREATE TABLE " + themovieDBproject.nombreTablaActores
                     + "(ID INT PRIMARY KEY NOT NULL,"
                     + " NOMBRE         CHAR(50),"
                     + " ID_ACTOR       INT,"
