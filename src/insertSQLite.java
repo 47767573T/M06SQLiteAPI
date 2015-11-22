@@ -1,6 +1,4 @@
-/**
- * Created by dremon on 09/11/15.
- */
+
 
     import java.sql.*;
 
@@ -14,7 +12,7 @@ public class insertSQLite {
                 Class.forName("org.sqlite.JDBC");
                 c = DriverManager.getConnection("jdbc:sqlite:movies1.db");
                 c.setAutoCommit(false);
-                System.out.println("Opened database successfully");
+                System.out.println("acceso correcto a Base de datos");
 
                 stmt = c.createStatement();
                 String sql = "INSERT INTO COMPANY (ID,NAME,AGE,ADDRESS,SALARY) " +
@@ -40,7 +38,7 @@ public class insertSQLite {
                 System.err.println( e.getClass().getName() + ": " + e.getMessage() );
                 System.exit(0);
             }
-            System.out.println("Records created successfully");
+            System.out.println("Guardado(s) registro(s) correctamente");
         }
     }
 

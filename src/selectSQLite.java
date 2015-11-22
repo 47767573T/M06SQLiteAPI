@@ -1,9 +1,7 @@
 
 import java.sql.*;
 
-/**
- * Created by dremon on 09/11/15.
- */
+
 public class selectSQLite {
 
     public static void main(String[] args)
@@ -14,7 +12,7 @@ public class selectSQLite {
                 Class.forName("org.sqlite.JDBC");
                 c = DriverManager.getConnection("jdbc:sqlite:movies1.db");
                 c.setAutoCommit(false);
-                System.out.println("Opened database successfully");
+                System.out.println("acceso correcto a Base de datos");
 
                 stmt = c.createStatement();
                 ResultSet rs = stmt.executeQuery( "SELECT id, name, age FROM COMPANY;" );
@@ -39,7 +37,7 @@ public class selectSQLite {
                 System.err.println( e.getClass().getName() + ": " + e.getMessage() );
                 System.exit(0);
             }
-            System.out.println("Operation done successfully");
+            System.out.println("consulta realizada correctamente");
         }
 
 }

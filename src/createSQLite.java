@@ -3,8 +3,44 @@ import java.sql.*;
 
 public class createSQLite {
 
-    private String archivoDB = "jdbc:sqlite:movies.db";
+    private static String archivoDB = "jdbc:sqlite:moviesDB0.db";
 
+    public static void createTabla(String nombreTablaPelis, String nombreTablaActores) {
+
+        Connection c = null;
+        Statement stmt = null;
+        try {
+            Class.forName("org.sqlite.JDBC");
+            c = DriverManager.getConnection(archivoDB);
+            System.out.println("acceso correcto a Base de datos");
+
+            stmt = c.createStatement();
+            String sqlPeli = "CREATE TABLE " + nombreTablaPelis
+                    + " (ID INT PRIMARY KEY     NOT NULL,"
+                    + " TITULO CHAR(100),"
+                    + " FECHA CHAR(20),"
+                    + " PERSONAJES CHAR(1000))";
+
+            String sqlActor = "CREATE TABLE " + nombreTablaActores
+                    + "(ID INT PRIMARY KEY NOT NULL,"
+                    + " NAME           CHAR(50),"
+                    + " ID_ACTOR       INT,"
+                    + " ID_PELICULA    INT)";
+
+            stmt.executeUpdate(sqlPeli);
+            stmt.executeUpdate(sqlActor);
+
+            stmt.close();
+            c.close();
+        } catch (Exception e) {
+            System.err.println(e.getClass().getName() + ": " + e.getMessage());
+            System.exit(0);
+        }
+        System.out.println("Tabla de MoviesDB creada");
+    }
+}
+
+/*
     public static void main(String[] args) {
         {
             Connection c = null;
@@ -13,11 +49,11 @@ public class createSQLite {
             try {
 
                 Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:peliculas.db");
-                System.out.println("Opened database successfully");
+                c = DriverManager.getConnection("jdbc:sqlite:nombre_de_archivo.db");
+                System.out.println("acceso correcto a Base de datos");
 
                 stmt = c.createStatement();
-                String sql = "CREATE TABLE MOVIEDB " +
+                String sql = "CREATE TABLE PELICULAS " +
                         "(ID INT PRIMARY KEY     NOT NULL," +
                         " NAME           TEXT    NOT NULL, " +
                         " AGE            INT     NOT NULL, " +
@@ -35,11 +71,11 @@ public class createSQLite {
             try {
 
                 Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:actores.db");
-                System.out.println("Opened database successfully");
+                c = DriverManager.getConnection("jdbc:sqlite:nombre_de_archivo.db");
+                System.out.println("acceso correcto a Base de datos");
 
                 stmt = c.createStatement();
-                String sql = "CREATE TABLE MOVIEDB " +
+                String sql = "CREATE TABLE ACTORES " +
                         "(ID INT PRIMARY KEY     NOT NULL," +
                         " NAME           TEXT    NOT NULL, " +
                         " AGE            INT     NOT NULL, " +
@@ -52,12 +88,12 @@ public class createSQLite {
                 System.err.println( e.getClass().getName() + ": " + e.getMessage() );
                 System.exit(0);
             }
-            System.out.println("Tabla de peliculas creada");
-            -
+            System.out.println("Tabla de actores creada");
+
 
         }
 
     }
 
 
-}
+}*/

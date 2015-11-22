@@ -1,5 +1,3 @@
-
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
@@ -8,15 +6,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Scanner;
 
 
-
-
-/**
- * Created by dremon on 09/11/15.
- */
 public class themovieDBproject {
-
 
     public static String getHTML(String urlToRead) throws Exception {
         StringBuilder result = new StringBuilder();
@@ -32,38 +25,58 @@ public class themovieDBproject {
         return result.toString();
     }
 
+    private static String nombreTablaPeliculas = "Sin nombre";
+    private static String nombreTablaActores = "Sin nombre";
+
+
     public static void main(String[] args){
+        Scanner scn = new Scanner(System.in);
+
+
+        //:::::::::::::::::::::::::::::::::::::::PREPARAMOS Y CREAMOS LA TABLA ANTES DE INSERTAR REGISTROS
         String s = "";
         String api_key = "e6f2c549601727fca2e90f4291bbe34d";
 
-        for (int i = 0; i < 1; i++) {
-            int numIndexPeli = 620+i;
-            String film = String.valueOf(numIndexPeli);
-            String peticionActores = "https://api.themoviedb.org/3/movie/"+film+"/credits?api_key="+api_key;
-            String peticionPeliculas = "https://api.themoviedb.org/3/movie/"+film+"?api_key="+api_key;
+        System.out.println("¿Nombre de la tabla de peliculas?");
+        nombreTablaPeliculas = scn.next();
+
+        System.out.println("Nombre de la tabla de actores?");
+        nombreTablaActores = scn.next();
+
+        createSQLite.createTabla(nombreTablaPeliculas, nombreTablaActores);
+
+        /*
+        //:::::::::::::::::::::::::::::::::::::::INTRODUCIMOS LOS REGISTROS
+        for (int i = 0; i < 2; i++) {
+            int peliculaIndex = 620+i;
+            String peliculaID = String.valueOf(peliculaIndex);
+            String actoresURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"/credits?api_key="+api_key;
+            String peliculasURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"?api_key="+api_key;
             try {
-                s = getHTML(peticionActores);
-                SJC(s);
-                //s = getHTML(peticionPeliculas);
-                //SJS(s);
+                //s = getHTML(actoresURL);
+                //SJC(s);
+                s = getHTML(peliculasURL);
+                SJS(s);
             } catch (Exception e) {
-                System.out.println("La peli " + film + " no existeix" + e);
+                System.out.println("La peli " + peliculaID + " no existeix" + e);
             }
 
 
 
 
 
-        }
+        }*/
     }
 
     public static void SJS (String cadena){
 
         Object jsonCadena =JSONValue.parse(cadena);
         JSONObject jsonItem=(JSONObject)jsonCadena;
-        System.out.print(jsonItem.get("original_title")+" ");
-        System.out.print(jsonItem.get("release_date"));
-        System.out.println(cadena);
+        String titulo = (String) jsonItem.get("original_title");
+        String fecha = (String) jsonItem.get("release_date");
+
+        System.out.print(titulo);
+        System.out.println(fecha);
     }
 
     public static void SJC (String cadena){
