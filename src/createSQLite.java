@@ -4,17 +4,14 @@ import java.sql.*;
 public class createSQLite {
 
 
-    static String archivoDB = themovieDBproject.ficheroDB;
-
     public static void createTabla() {
 
         Connection c = null;
         Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
-            c = DriverManager.getConnection(archivoDB);
+            c = DriverManager.getConnection(themovieDBproject.ficheroDB);
             System.out.println("acceso correcto a Base de datos");
-
             stmt = c.createStatement();
             String sqlPeli = "CREATE TABLE " + themovieDBproject.nombreTablaPeliculas
                     + " (ID INT PRIMARY KEY     NOT NULL,"
@@ -37,67 +34,9 @@ public class createSQLite {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Tabla de MoviesDB creada");
+        System.out.println("Tabla de "+themovieDBproject.nombreTablaPeliculas+" y "+themovieDBproject.nombreTablaActores
+                +" creada en "+ themovieDBproject.ficheroDB);
+
     }
 
 }
-
-
-
-/*
-    public static void main(String[] args) {
-        {
-            Connection c = null;
-            Statement stmt = null;
-
-            try {
-
-                Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:nombre_de_archivo.db");
-                System.out.println("acceso correcto a Base de datos");
-
-                stmt = c.createStatement();
-                String sql = "CREATE TABLE PELICULAS " +
-                        "(ID INT PRIMARY KEY     NOT NULL," +
-                        " NAME           TEXT    NOT NULL, " +
-                        " AGE            INT     NOT NULL, " +
-                        " ADDRESS        CHAR(50), " +
-                        " SALARY         REAL)";
-                stmt.executeUpdate(sql);
-                stmt.close();
-                c.close();
-            } catch ( Exception e ) {
-                System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-                System.exit(0);
-            }
-            System.out.println("Tabla de peliculas creada");
-
-            try {
-
-                Class.forName("org.sqlite.JDBC");
-                c = DriverManager.getConnection("jdbc:sqlite:nombre_de_archivo.db");
-                System.out.println("acceso correcto a Base de datos");
-
-                stmt = c.createStatement();
-                String sql = "CREATE TABLE ACTORES " +
-                        "(ID INT PRIMARY KEY     NOT NULL," +
-                        " NAME           TEXT    NOT NULL, " +
-                        " AGE            INT     NOT NULL, " +
-                        " ADDRESS        CHAR(50), " +
-                        " SALARY         REAL)";
-                stmt.executeUpdate(sql);
-                stmt.close();
-                c.close();
-            } catch ( Exception e ) {
-                System.err.println( e.getClass().getName() + ": " + e.getMessage() );
-                System.exit(0);
-            }
-            System.out.println("Tabla de actores creada");
-
-
-        }
-
-    }
-
-
-}*/

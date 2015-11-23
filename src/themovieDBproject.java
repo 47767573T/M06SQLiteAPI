@@ -16,11 +16,11 @@ public class themovieDBproject {
     static Random rnd = new Random();
 
     public static String ficheroDB = "jdbc:sqlite:moviesDB"+rnd.nextInt(5000)+".db";
-    public static String nombreTablaPeliculas = "Peliculas";
-    public static String nombreTablaActores = "Actores";
+    public static String nombreTablaPeliculas = "PELICULAS";
+    public static String nombreTablaActores = "ACTORES";
     public static int lastIdCast = 1;
-    public static int idIniPelicula;
-    public static int numPeliculas;
+    public static int idIniPelicula = 700;
+    public static int numPeliculas = 3;
 
 
     public static void main(String[] args){
@@ -30,6 +30,8 @@ public class themovieDBproject {
         //:::::::::::::::::::::::::::::::::::::::PREPARAMOS Y CREAMOS LA TABLA ANTES DE INSERTAR REGISTROS
         String s = "";
         String api_key = "e6f2c549601727fca2e90f4291bbe34d";
+
+        createSQLite.createTabla();
 
 
         //:::::::::::::::::::::::::::::::::::::::INTRODUCIMOS LOS REGISTROS
@@ -49,6 +51,7 @@ public class themovieDBproject {
                 System.out.println("La peli " + peliculaID + " no existeix " + e);
             }
         }
+        System.out.println("Añadidas "+numPeliculas+" peliculas");
 
         //::::::::::::::::::::::::::::::::::::::::GENERAMOS LOS 2 MODOS DE CONSULTA
         //MODO 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

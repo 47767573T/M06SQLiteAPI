@@ -17,24 +17,27 @@ public class selectSQLite {
             System.out.println("Acceso correcto a Base de datos");
 
             stmt = c.createStatement();
-            ResultSet rs = stmt.executeQuery( "ID , TITULO "
-                    +"FROM "+themovieDBproject.nombreTablaPeliculas);
+            ResultSet rs = stmt.executeQuery( "SELECT ID, TITULO FROM "+themovieDBproject.nombreTablaPeliculas+";");
             while ( rs.next() ) {
                 numIndex++;
                 int id = rs.getInt("ID");
-                String  titulo = rs.getString("TITULO");
+                String titulo = rs.getString("TITULO");
 
                 System.out.println(numIndex+"\t("+id+")"+titulo);
 
             }
-            rs.close();
-            stmt.close();
-            c.close();
+
+            System.out.println(rs.findColumn("ID"));
+
+            //rs.close();
+            //stmt.close();
+            //c.close();
         } catch ( Exception e ) {
-            System.err.println( e.getClass().getName() + ": " + e.getMessage()+"prueba" );
+            System.err.println( e.getClass().getName() + ": " + e.getMessage()+"prueba");
             System.exit(0);
         }
         System.out.println("consulta realizada correctamente");
+
     }
 
 
