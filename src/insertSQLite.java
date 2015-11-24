@@ -5,11 +5,11 @@ import java.sql.*;
 public class insertSQLite {
 
     static String archivoDB = themovieDBproject.ficheroDB;
+    static Connection c;
+    static Statement stmt;
 
     public static void insertTablaPelis(int id, String titulo, String fecha) {
         {
-            Connection c = null;
-            Statement stmt = null;
             try {
                 Class.forName("org.sqlite.JDBC");
                 c = DriverManager.getConnection(archivoDB);
@@ -32,8 +32,6 @@ public class insertSQLite {
 
     public static void insertTablaActores(int id, String nombre, long actor, String personaje, int idPeli) {
         {
-            Connection c = null;
-            Statement stmt = null;
             try {
                 Class.forName("org.sqlite.JDBC");
                 c = DriverManager.getConnection(archivoDB);

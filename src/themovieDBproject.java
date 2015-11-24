@@ -23,7 +23,7 @@ public class themovieDBproject {
     public static int numPeliculas = 3;
 
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
 
 
@@ -36,10 +36,10 @@ public class themovieDBproject {
 
         //:::::::::::::::::::::::::::::::::::::::INTRODUCIMOS LOS REGISTROS
         for (int i = 0; i < numPeliculas; i++) {
-            int peliculaIndex = idIniPelicula+i;
+            int peliculaIndex = idIniPelicula + i;
             String peliculaID = String.valueOf(peliculaIndex);
-            String actoresURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"/credits?api_key="+api_key;
-            String peliculasURL = "https://api.themoviedb.org/3/movie/"+peliculaID+"?api_key="+api_key;
+            String actoresURL = "https://api.themoviedb.org/3/movie/" + peliculaID + "/credits?api_key=" + api_key;
+            String peliculasURL = "https://api.themoviedb.org/3/movie/" + peliculaID + "?api_key=" + api_key;
             try {
 
                 s = getHTML(peliculasURL);
@@ -47,22 +47,35 @@ public class themovieDBproject {
                 s = getHTML(actoresURL);
                 jsonToTablaActores(s, peliculaIndex);
 
+
             } catch (Exception e) {
-                System.out.println("La peli " + peliculaID + " no existeix " + e);
+                System.out.println("La peli " + peliculaID + " no existeix ");
             }
         }
-        System.out.println("Añadidas "+numPeliculas+" peliculas");
+                //::::::::::::::::::::::::::::::::::::::::GENERAMOS LOS 2 MODOS DE CONSULTA
+                //MODO 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                System.out.println("\nQUERY MODO 1:\n");
 
-        //::::::::::::::::::::::::::::::::::::::::GENERAMOS LOS 2 MODOS DE CONSULTA
-        //MODO 1:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-        System.out.println("\n\n\tQUERY MODO 1:\n");
+                System.out.println("Listado de peliculas: ");
+                selectSQLite.movieList();
 
-        System.out.println("Listado de peliculas:");
-        selectSQLite.movieList();
+                System.out.println("Elija un ID de la pelicula del listado");
+                int idPeli = scn.nextInt();
+                selectSQLite.query1(idPeli);
+
+                //MODO 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+                System.out.println("");
+                selectSQLite.actorList();
+
+                System.out.println("Elija un ID del actor del listado");
+                int idActor = scn.nextInt();
+                selectSQLite.query2(idActor);
 
 
 
     }
+
 
     public static void jsonToTablaPelis (String cadena, int id){
 
