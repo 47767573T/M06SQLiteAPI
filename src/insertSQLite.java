@@ -5,6 +5,8 @@ import java.sql.*;
 public class insertSQLite {
 
     static String archivoDB = themovieDBproject.ficheroDB;
+    static String tablaPelis = themovieDBproject.nombreTablaPeliculas;
+    static String tablaActores = themovieDBproject.nombreTablaActores;
     static Connection c;
     static Statement stmt;
 
@@ -16,7 +18,7 @@ public class insertSQLite {
                 c.setAutoCommit(false);
 
                 stmt = c.createStatement();
-                String sql = "INSERT INTO "+themovieDBproject.nombreTablaPeliculas+" (ID,TITULO,FECHA) "
+                String sql = "INSERT INTO "+tablaPelis+" (ID,TITULO,FECHA) "
                             +"VALUES ("+id+",'"+titulo+"','"+fecha+"');";
                 stmt.executeUpdate(sql);
 
@@ -38,7 +40,7 @@ public class insertSQLite {
                 c.setAutoCommit(false);
 
                 stmt = c.createStatement();
-                String sql = "INSERT INTO "+themovieDBproject.nombreTablaActores+" (ID,NOMBRE,ID_ACTOR,PERSONAJE,ID_PELICULA) "
+                String sql = "INSERT INTO "+tablaActores+" (ID,NOMBRE,ID_ACTOR,PERSONAJE,ID_PELICULA) "
                         +"VALUES ("+id+",'"+nombre+"',"+actor+",'"+personaje+"',"+idPeli+");";
                 stmt.executeUpdate(sql);
 

@@ -13,19 +13,18 @@ import java.util.Scanner;
 public class themovieDBproject {
 
 
-    static Random rnd = new Random();
+    static Random rnd = new Random();   //Crear nombres de base de datos aleatorias
 
     public static String ficheroDB = "jdbc:sqlite:moviesDB"+rnd.nextInt(5000)+".db";
     public static String nombreTablaPeliculas = "PELICULAS";
     public static String nombreTablaActores = "ACTORES";
     public static int lastIdCast = 1;
-    public static int idIniPelicula = 700;
-    public static int numPeliculas = 3;
+    public static int idIniPelicula = 600;
+    public static int numPeliculas = 100;
 
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-
 
         //:::::::::::::::::::::::::::::::::::::::PREPARAMOS Y CREAMOS LA TABLA ANTES DE INSERTAR REGISTROS
         String s = "";
@@ -63,17 +62,15 @@ public class themovieDBproject {
                 int idPeli = scn.nextInt();
                 selectSQLite.query1(idPeli);
 
-                //MODO 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+                //MODO 2:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                System.out.println("\nQUERY MODO 1:\n");
                 System.out.println("");
                 selectSQLite.actorList();
 
                 System.out.println("Elija un ID del actor del listado");
                 int idActor = scn.nextInt();
                 selectSQLite.query2(idActor);
-
-
-
     }
 
 
@@ -82,9 +79,11 @@ public class themovieDBproject {
         Object jsonObj =JSONValue.parse(cadena);
         JSONObject jsonItem=(JSONObject)jsonObj;
         String titulo = (String) jsonItem.get("original_title");
+        String tituloCorregido = correctComillas(titulo);
+
         String fecha = (String) jsonItem.get("release_date");
 
-        insertSQLite.insertTablaPelis(id, titulo, fecha);
+        insertSQLite.insertTablaPelis(id, tituloCorregido, fecha);
     }
 
     public static void jsonToTablaActores (String cadena, int idPeli){
@@ -96,10 +95,15 @@ public class themovieDBproject {
 
             JSONObject jo= (JSONObject)casting.get(i);
             String nombre = (String) jo.get("name");
+            String nombreCorregido = correctComillas(nombre);
+
             long actor = (long) jo.get("id");
             String personaje = (String) jo.get("character");
-            insertSQLite.insertTablaActores(lastIdCast, nombre, actor, personaje, idPeli);
+            String personajeCorregido = correctComillas(personaje);
+
+            insertSQLite.insertTablaActores(lastIdCast, nombreCorregido, actor, personajeCorregido, idPeli);
             lastIdCast++;
+
         }
     }
 
@@ -116,4 +120,16 @@ public class themovieDBproject {
         rd.close();
         return result.toString();
     }
+
+    public static String correctComillas (String fraseConComillas){
+        String comillas = "\'";
+
+        if (fraseConComillas.contains(comillas)) {
+        String fraseSinComillas = fraseConComillas.replace(comillas,"\"");
+            return fraseSinComillas;
+        }
+
+        return fraseConComillas;
+    }
+
 }
