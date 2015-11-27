@@ -12,6 +12,9 @@ public class selectSQLite {
     static String tablaPelis = themovieDBproject.nombreTablaPeliculas;
     static String tablaActores = themovieDBproject.nombreTablaActores;
 
+    /**
+     * método que muestra por pantalla las peliculas de la tabla "peliculas"
+     */
     public static void movieList (){
         int numIndex = 0;
         try {
@@ -38,6 +41,10 @@ public class selectSQLite {
 
     }
 
+    /**
+     * metodo que muestra por pantalla las características de la pelicula según id declarado
+     * @param idSeleccionado id de la pelicula que se desea mostrar en pantalla
+     */
     public static void query1 (int idSeleccionado){
 
         try {
@@ -69,6 +76,9 @@ public class selectSQLite {
         }
     }
 
+    /**
+     * método que muestra por pantalla los actores de la tabla "actores"
+     */
     public static void actorList (){
         int numIndex = 0;
         try {
@@ -96,6 +106,10 @@ public class selectSQLite {
 
     }
 
+    /**
+     * metodo que muestra por pantalla las características del actor según id de actor declarada
+     * @param idSeleccionado id de la pelicula que se desea mostrar en pantalla
+     */
     public static void query2 (int idSeleccionado){
 
         try {
@@ -110,14 +124,11 @@ public class selectSQLite {
                     +"WHERE pelis.ID = actores.ID_PELICULA "
                     +"AND actores.ID_ACTOR = "+idSeleccionado);
 
-            //String  nombre = rs.getString("NOMBRE");
-            //System.out.println("::: "+nombre+" :::");
-
             while ( rs.next() ) {
                 String  nombre = rs.getString("NOMBRE");
                 String  titulo = rs.getString("TITULO");
-                System.out.print(nombre+"- "+titulo);
             }
+
             rs.close();
             stmt.close();
             c.close();

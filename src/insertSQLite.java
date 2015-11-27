@@ -10,6 +10,12 @@ public class insertSQLite {
     static Connection c;
     static Statement stmt;
 
+    /**
+     * Método para insertar registros de peliculas en la tabla de peliculas
+     * @param id campo ID de la peliculas para introducir en la BBDD
+     * @param titulo campo titulo de la pelicula para introducir en la BBDD
+     * @param fecha campo fecha de lanzamiento de la peliculas para introducir en la BBDD
+     */
     public static void insertTablaPelis(int id, String titulo, String fecha) {
         {
             try {
@@ -18,6 +24,8 @@ public class insertSQLite {
                 c.setAutoCommit(false);
 
                 stmt = c.createStatement();
+
+                //Formar el estamento para insertar en las tablas por cada pelicula
                 String sql = "INSERT INTO "+tablaPelis+" (ID,TITULO,FECHA) "
                             +"VALUES ("+id+",'"+titulo+"','"+fecha+"');";
                 stmt.executeUpdate(sql);
@@ -25,6 +33,7 @@ public class insertSQLite {
                 stmt.close();
                 c.commit();
                 c.close();
+
             } catch (Exception e) {
                 System.err.println(e.getClass().getName() + ": " + e.getMessage());
                 System.exit(0);
@@ -32,6 +41,14 @@ public class insertSQLite {
         }
     }
 
+    /**
+     * Método para insertar registros de peliculas en la tabla de peliculas
+     * @param id campo ID de la relacion entre pelicula y actor para introducir en la BBDD
+     * @param nombre campo nombre de la pelicula para introducir en la BBDD
+     * @param actor campo fecha de lanzamiento de la peliculas para introducir en la BBDD
+     * @param personaje campo persona de la peliculas para introducir en la BBDD
+     * @param idPeli campo ID de la pelicula para introducir en la BBDD
+     */
     public static void insertTablaActores(int id, String nombre, long actor, String personaje, int idPeli) {
         {
             try {
@@ -39,6 +56,7 @@ public class insertSQLite {
                 c = DriverManager.getConnection(archivoDB);
                 c.setAutoCommit(false);
 
+                //Formar el estamento para insertar en las tablas de actor por cada pelicula
                 stmt = c.createStatement();
                 String sql = "INSERT INTO "+tablaActores+" (ID,NOMBRE,ID_ACTOR,PERSONAJE,ID_PELICULA) "
                         +"VALUES ("+id+",'"+nombre+"',"+actor+",'"+personaje+"',"+idPeli+");";
@@ -47,6 +65,7 @@ public class insertSQLite {
                 stmt.close();
                 c.commit();
                 c.close();
+
             } catch (Exception e) {
                 System.err.println(e.getClass().getName()+e.getClass().getMethods() + ": " + e.getMessage());
                 System.exit(0);

@@ -6,6 +6,9 @@ public class createSQLite {
     static String tablaPelis = themovieDBproject.nombreTablaPeliculas;
     static String tablaActores = themovieDBproject.nombreTablaActores;
 
+    /**
+     * Método que crea la estructura de la BBDD de peliculas y actores
+     */
     public static void createTabla() {
 
         Connection c = null;
@@ -13,7 +16,7 @@ public class createSQLite {
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection(themovieDBproject.ficheroDB);
-            System.out.println("acceso correcto a Base de datos");
+            System.out.println("Acceso correcto a Base de datos");
             stmt = c.createStatement();
 
             //Definimos la estructura de las tablas para peliculas
@@ -39,8 +42,8 @@ public class createSQLite {
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
             System.exit(0);
         }
-        System.out.println("Tabla de "+tablaPelis+" y "+tablaActores
-                +" creada en "+ themovieDBproject.ficheroDB);
+        System.out.println("Las Tablas de "+tablaPelis+" y "+tablaActores
+                +" creadas");
 
     }
 
