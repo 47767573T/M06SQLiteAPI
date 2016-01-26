@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97540dd5-65a2-4e3f-8903-a080fa00332f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/createSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/createSQLite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/insertSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/insertSQLite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/selectSQLite.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/selectSQLite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/M06SQLiteAPI/themovieDBproject.class" afterPath="$PROJECT_DIR$/out/production/M06SQLiteAPI/themovieDBproject.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/createSQLite.java" afterPath="$PROJECT_DIR$/src/createSQLite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/insertSQLite.java" afterPath="$PROJECT_DIR$/src/insertSQLite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/selectSQLite.java" afterPath="$PROJECT_DIR$/src/selectSQLite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/themovieDBproject.java" afterPath="$PROJECT_DIR$/src/themovieDBproject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="M06SQLiteAPI.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,17 +26,24 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="M06SQLiteAPI" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="themovieDBproject.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+            <state vertical-scroll-proportion="11.448276">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,23 +61,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="insertSQLite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="insertSQLite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91484463">
+            <state vertical-scroll-proportion="0.0">
               <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-              <folding />
+              <folding>
+                <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+                <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="selectSQLite.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="selectSQLite.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.6">
+              <caret line="131" column="54" selection-start-line="131" selection-start-column="54" selection-end-line="131" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+                <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+                <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+                <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
               </folding>
             </state>
           </provider>
@@ -91,10 +105,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/createSQLite.java" />
         <option value="$PROJECT_DIR$/src/insertSQLite.java" />
-        <option value="$PROJECT_DIR$/src/selectSQLite.java" />
         <option value="$PROJECT_DIR$/src/themovieDBproject.java" />
+        <option value="$PROJECT_DIR$/src/selectSQLite.java" />
       </list>
     </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -102,9 +121,6 @@
         <option name="mavenHome" value="Bundled (Maven 3)" />
       </MavenGeneralSettings>
     </option>
-  </component>
-  <component name="NamedScopeManager">
-    <order />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
@@ -133,8 +149,12 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -169,9 +189,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -185,6 +203,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -280,6 +299,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -301,6 +329,15 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -433,6 +470,7 @@
       <created>1448102199419</created>
       <option name="number" value="Default" />
       <updated>1448102199419</updated>
+      <workItem from="1453822522644" duration="805000" />
     </task>
     <task id="LOCAL-00001" summary="Parte inicial de la practica">
       <created>1448106166485</created>
@@ -479,6 +517,9 @@
     <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="805000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -492,29 +533,30 @@
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.4943662" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35055867" sideWeight="0.3471831" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.49718308" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1315229" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31061453" sideWeight="0.6528169" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.4943662" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35055867" sideWeight="0.3471831" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3173913" sideWeight="0.6528169" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843792" sideWeight="0.49718308" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1400426" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2401491" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39944133" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -552,6 +594,49 @@
     <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/createSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -571,7 +656,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="21" column="69" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="69" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,6 +669,10 @@
           <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -607,7 +699,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,6 +712,10 @@
           <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -643,7 +742,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -653,6 +755,10 @@
           <caret line="35" column="86" selection-start-line="35" selection-start-column="86" selection-end-line="35" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -679,7 +785,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -689,6 +798,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -715,7 +828,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -725,6 +841,10 @@
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -751,7 +871,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,6 +884,10 @@
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
         </state>
       </provider>
@@ -787,10 +914,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
+    <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="15" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="15" />
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding>
+            <marker date="1453821869103" expanded="true" signature="1049:1166" placeholder="INSERT INTO missingValue... " />
+            <marker date="1453821869103" expanded="true" signature="2438:2603" placeholder="INSERT INTO missingValue... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/themovieDBproject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="11.448276">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -799,19 +937,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/selectSQLite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.6">
+          <caret line="131" column="54" selection-start-line="131" selection-start-column="54" selection-end-line="131" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1453823294983" expanded="true" signature="794:817" placeholder="SELECT ID, T... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="1790:2004" placeholder="SELECT TITUL... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="2983:3021" placeholder="SELECT DISTI... missingValue" />
+            <marker date="1453823294983" expanded="true" signature="4112:4324" placeholder="SELECT NOMBR... missingValue" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/insertSQLite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91484463">
-          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>

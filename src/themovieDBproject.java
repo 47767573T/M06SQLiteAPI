@@ -19,8 +19,8 @@ public class themovieDBproject {
     public static String nombreTablaPeliculas = "PELICULAS";
     public static String nombreTablaActores = "ACTORES";
     public static int lastIdCast = 1;
-    public static int idIniPelicula = 600;  //ID desde el cual leeremos las peliculas que guardaremos
-    public static int numPeliculas = 100;   //número de peliculas que queremos guardar
+    public static int idIniPelicula = 690;  //ID desde el cual leeremos las peliculas que guardaremos
+    public static int numPeliculas = 10;   //número de peliculas que queremos guardar
 
 
     public static void main(String[] args) {

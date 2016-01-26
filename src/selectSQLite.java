@@ -94,6 +94,8 @@ public class selectSQLite {
                 String nombre = rs.getString("NOMBRE");
                 System.out.println(numIndex+"\t("+id+")"+nombre);
             }
+            System.out.println("flag1");
+
 
             rs.close();
             stmt.close();
@@ -127,6 +129,8 @@ public class selectSQLite {
             while ( rs.next() ) {
                 String  nombre = rs.getString("NOMBRE");
                 String  titulo = rs.getString("TITULO");
+                System.out.println(nombre+" - "+titulo);
+
             }
 
             rs.close();
